@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Willkommen bei KAU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<header>
+    <div id="main-navigation">
+
+
+        <nav id="topnav" class="topnav">
+            <div ><a href="index.html"><img class="logo" src="pictures/KAU_Logo.jpeg" alt="Logo KAU"> </a></div>
+            <ul>
+                <li class="nav_item l1 "><a class="nav_link" href="index.html">Start</a></li>
+                <li class="nav_item l1 "><a class="nav_link" href="about.html">über uns</a>
+                </li>
+                <li class="nav_item l1 active-l"><a class="nav_link" href="membership.html">Mitglied werden</a></li>
+                <li class="nav_item l1"><a class="nav_link" href="legal.html">Rechtliches</a></li>
+                <li class="nav_item l1"><a class="nav_link" href="wissen.html">Wissen</a></li>
+
+                <li><a href="javascript:void(0);" class="icon" onclick="toggle_sidebar()"
+                ><i class="fa fa-bars"></i>
+                </a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <div class="w3-sidebar w3-bar-block w3-animate-right" id="kau_sidebar">
+        <button class="w3-bar-item w3-circle side-icon" id="sidebar-close"
+                onclick="sidebar_close()"><i class="fa fa-close"></i></button>
+        <a href="index.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-globe fa-2xl"></i></a>
+        <a href="about.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-info-circle"></i></a>
+        <a href="membership.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-user-plus"></i></a>
+        <a href="legal.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-legal"></i></a>
+        <a href="wissen.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-graduation-cap"></i></a>
+    </div>
+</header>
+
+
+
+<main>
+    <section id="membership_form" class="">
+        <h1>Mitglied werden</h1>
+        <form class="membership form membership-form" action="confirmation.html" method="post">
+            <div id="last_name" class="form-group">
+                <label for="member_lastname">Nachname *</label>
+                <input type="text" name="member_lastname" id="member_lastname" class="lastname" required>
+                <p class="error"></p>
+            </div>
+            <div id="first_name" class="form-group">
+                <label for="member_firstname">Vorname *</label>
+                <input type="text" name="member_firstname" id="member_firstname" class="firstname" required>
+                <p class="error"></p>
+            </div>
+            <div id="birthdate" class="form-group" >
+                <label for="member_birthdate">Geburtsdatum (optional)</label>
+                <input type="date" name="member_birthdate" id="member_birthdate" class="birthday">
+                <p class="error"></p>
+            </div>
+
+            <div id="email" class="form-group">
+                <label for="member_email">E-Mail *</label>
+                <input type="email" name="member_email" id="member_email" class="email" required>
+                <p class="error"></p>
+            </div>
+            <p>* notwendige Eingaben</p>
+            <input type="submit" name="submit" id="submit" class="button" value="Antrag versenden">
+
+        </form>
+    </section>
+</main>
+
+<footer>
+
+    <div class="footer-box">
+        <a class="button button-link footer-item" href="about.html#contact_form">Kontakt</a>
+        <a class="button button-link footer-item" href="legal.html#privacy">Datenschutz</a>
+        <a class="button button-link footer-item" href="legal.html#impressum">Impressum</a>
+    </div>
+    <div>
+        <p>Diese Seite wurde erstellt von<a href="mailto:fza144962@stud.gibb.ch"> Fabian Zaugg</a>, 2024</p>
+    </div>
+</footer>
+<script src="javascript/burger.js"></script>
+
+<script src="javascript/form.js"></script>
+
+</body>
+
+</html>
+

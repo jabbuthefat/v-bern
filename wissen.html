@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="DE">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wissen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wissen.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+
+<body>
+<header>
+    <div id="main-navigation">
+
+
+        <nav id="topnav" class="topnav">
+            <div ><a href="index.html"><img class="logo" src="pictures/KAU_Logo.jpeg" alt="Logo KAU"> </a></div>
+            <ul>
+                <li class="nav_item l1"><a class="nav_link" href="index.html">Start</a></li>
+                <li class="nav_item l1 "><a class="nav_link" href="about.html">über uns</a>
+                </li>
+                <li class="nav_item l1"><a class="nav_link" href="membership.html">Mitglied werden</a></li>
+                <li class="nav_item l1"><a class="nav_link" href="legal.html">Rechtliches</a></li>
+                <li class="nav_item l1 active-l"><a class="nav_link" href="wissen.html">Wissen</a></li>
+
+                <li><a href="javascript:void(0);" class="icon" onclick="toggle_sidebar()"
+                ><i class="fa fa-bars"></i>
+                </a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <div class="w3-sidebar w3-bar-block w3-animate-right" id="kau_sidebar">
+        <button class="w3-bar-item w3-circle side-icon" id="sidebar-close"
+                onclick="sidebar_close()"><i class="fa fa-close"></i></button>
+        <a href="index.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-globe fa-2xl"></i></a>
+        <a href="about.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-info-circle"></i></a>
+        <a href="membership.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-user-plus"></i></a>
+        <a href="legal.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-legal"></i></a>
+        <a href="wissen.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-graduation-cap"></i></a>
+    </div>
+</header>
+
+
+
+<section id="wissen">
+    <h2 class="w3-center">Wissens-Einträge</h2>
+
+    <article class="w3-container bg_even-paler-red to-be-animated-right">
+        <h2 >Vergleich von Anbietern</h2>
+        <p>
+            Es kommt immer auf mehrere Sachen darauf an. Technisch z.B.:
+        <ul>
+
+            <li>Wie viel Speicherplatz wird benötigt?</li>
+            <li>Welche serverseitigen Programme werden benötigt?</li>
+            <li>Benötigt es eine Datenbank?</li>
+            <li>Wie viel eigene Konfiguration ist nötig?</li>
+            <li>Zudem kann es auch rechtliche Aspekte oder Präferenzen geben:</li>
+            <li>Wie sieht es mit Datenschutz aus</li>
+            <li>sollte der Server in einem spezifischen Gebiet wie EU stehen oder eben nicht stehen?</li>
+            <li>Gibt es Anbieter, welche aus anderen Gründen ausgeschlossen werden?</li>
+            <li>ethische Aspekte</li>
+        </ul>
+        <p>Preisvergleiche zeigen Standard-Dienste ab 5.-CHF pro Monat an gehen ca bis 15.- CHF. Z.T. sind Domains beschränkt, Datenbanken beschränkt. Alle haben eigentlich SSL, SSH SFTP Zugänge. Es gibt unterschiede im Speicherplatz. Weitergehende Dienste sind dann meist teurer und Massgeschneidert, wo CPU, RAM und Speicher dynamisch angepasst werden.
+        </p>
+        <div class="table-container">
+        <h3>Vergleichstabelle einiger Hoster</h3>
+
+
+        <table id="hoster" class="table">
+            <tr>
+                <th>Name</th>
+                <th>Speicher in GB</th>
+                <th>Domains</th>
+                <th>Datenbanken</th>
+                <th>SSH/SFTP</th>
+                <th>Preis/Monat</th>
+            </tr>
+            <tr>
+                <td>Hostar</td>
+                <td>100</td>
+                <td>10</td>
+                <td>Unlimitiert</td>
+                <td>ja</td>
+                <td>4.95</td>
+            </tr>
+            <tr>
+                <td>Metanet</td>
+                <td>100</td>
+                <td>Unlimitiert</td>
+                <td>Unlimitiert</td>
+                <td>ja</td>
+                <td>6.70</td>
+            </tr>
+            <tr>
+                <td>Infomaniak</td>
+                <td>250</td>
+                <td>20</td>
+                <td>Unlimitiert</td>
+                <td>ja</td>
+                <td>10.70</td>
+            </tr>
+            <tr>
+                <td>Cyon</td>
+                <td>50</td>
+                <td>10</td>
+                <td>ja</td>
+                <td>ja</td>
+                <td>12.90</td>
+            </tr>
+        </table>
+        </div>
+    </article>
+
+    <article class="w3-container bg_silver to-be-animated-left">
+        <h2>Rechtliche Aspekte</h2>
+        <p>
+            Bilder müssen angegeben werden im Impressum.
+            Es muss zudem die verantwortliche Person genannt werden für die Homepage
+            und für die Datensammlung. Es ist zu beachten, ob nur das schweizer Datenschutzgesetz
+            DSG beachtet werden muss, oder ob auch das EU-Recht DSGVO beachtet werden muss (was eigentlich meistens der Fall ist).
+            Grundsätzlich muss aber sparsam und zweckmässig mit persönlichen Daten umgegangen werden.
+            Im Impressum stehen zudem die Verantworltichen Personen und Kontaktmöglichkeiten.
+            Meist gibt es auch gleich die Datenschutzerklärung.
+            Es dürfen nicht Werke verwendet werden, welche nicht für den Anwendungszweck freigegeben sind.
+            So dürfen z.B. für eine Firmenwebsite keine Bilder verwendet werden, welche nichtkommerziell sind.
+            Man muss sich also auch urheberrechtliche Fragen stellen bei der Auswahl des Inhalts
+        </p>
+    </article>
+    <div class="two-grid-container">
+    <article class="bg_light-green w3-container to-be-animated-left">
+        <h2>Best Practices User Experience</h2>
+
+        <h3>Visuelle Hierarchie</h3>
+        <p>Durch Grosse oder ausgefallene Überschriften.</p>
+        <p>Platzierung gemäss Richtung (meist von oben links nach unten rechts)</p>
+        <p>Hervorhebung durch Bunte Farben vs. Unbunte Farben.</p>
+
+        <h3>Farbenkodierung</h3>
+        <p>Bestimmte Farben werden mit bestimmten Attributen verbunden. <br>
+        Grün wird z.B. mit Natur Entspannung, Gesundheit verbunden. <br>
+        Violett wird z.B. mit Wohlstand, Magie, Mystik und Kreativität verbunden. <br>
+
+        <h3>Ausreichender Farbkontrast</h3>
+
+        <p>Kann zum Beispiel über <a href="https://colourcontrast.cc"> diese Seite </a> überprüft werden mit Hexawerten.</p>
+
+        <h3>Gut lesbare Schriftart (z.B. Sans-Serif)</h3>
+        Weiter gibt es noch Slab-Serif, Script, Decorative und natürlich serifs.
+
+        <h3>Gesetz der Kontinuität</h3>
+        Elemente auf Linie oder Kurve werden als gemeinsam angesehen.
+
+        <h3>Gesetz der gemeinsamen Region</h3>
+        Elemente werden als Zusammengehörig gesehen, wenn sie eingegrenzt sind. Z.B. mit border, Hintergrund, Schattierungen
+
+        <h3>Definition Breakpoints</h3>
+
+        <h3>Angepasst Schriftgrössen</h3>
+        Bei Mobile-Überschriften Schriftgrösse anpassen oder Narrow Fonts benutzen. Nicht über viele Zeilen hinweg
+
+        <h3>Zugeschnittene Bilder</h3>
+        Zuschneiden mit wichtigstem Bildausschnitt, damit dieser angezeigt wird, wenn Viewport kleiner
+
+        <h3>Flexible Bilder und Videos</h3>
+        Bilder und Videos sollten sich anpassen auf Bildschirm. Z.B. Videos über die gesamte Bildschirmbreite
+
+        <h3>Skeletons (Laden) </h3>
+        Wenn Ladezeiten mehr als vier sekunden dauern, sollten Skeletons verwendet werden, welche angeben was geladen wird, damit wartezeit kürzer scheint.
+
+    </article>
+    <article class="w3-container bg_slightly-darker-green to-be-animated-right">
+        <h2>Web ohne Hürden</h2>
+        <h3>Bildbeschreibungen (Alt-Texte) </h3>
+        <p>Alle Bilder sollten mit dem Alt-Tag aussagekräftige Texte erhalten. Diese Beschreibungen helfen Menschen mit Sehbehinderungen, den Inhalt zu verstehen. </p>
+
+        <h3>Strukturierter HTML-Code </h3>
+        <p>Gut strukturierter Code (klar und logisch) unterstützt Screenreader in der Navigation </p>
+
+        <h3>Lesereihenfolge und Tastaturnavigation </h3>
+        <p>Lesereihenfolge sollte sinnvoll sein. Alle Funktionen sollten auch mit einer Tastatur ausführbar sein (nicht alle können Mäuse benutzten).</p>
+
+        <h3>Farbkontraste </h3>
+        <p>Der Farbkontrast sollte hoch genug sein, damit Menschen mit Sehbehinderungen den Text immer noch lesen können. https://colourcontrast.cc </p>
+
+        <h3>Textgröße und Anpassbarkeit</h3>
+        <p>Der Text sollte grundsätzlich gross genug sein. Ausserdem sollte er anpassbar sein.</p>
+
+        <h3>Formulare</h3>
+        <p>Formulare sollten in leichter Sprache verfasst sein. Es sollten klare Anweisungen und Validierungshinweise vorhanden sein.
+            Alle Formularfelder sollten Labels beinhalten. </p>
+
+        <h3>Multimedia-Inhalte</h3>
+        <p>Wenn möglich sollten alternative Inhalte für Videos und Audio bereitgestellt werden (z.B. Untertitel - also nur Gesprochenes -
+            oder Transkriptionen – Gesamtbeschrieb).</p>
+
+        <h3>Barrierefreie Navigation</h3>
+        <p>Die Navigation sollte einfach und Konistent sein. Klare Strukturen sind für alle gut.</p>
+
+        <h3>Geräteunabhängigkeit</h3>
+        <p>Die Website sollte auf allen Geräten laufen, also sowohl Mobile wie auch PC und Tablets</p>
+
+        <h3>Browserkompatibilität</h3>
+        <p> Website sollten auf allen gängigen Browsern laufen und muss daher auch breit getestet werden.</p>
+    </article>
+    </div>
+</section>
+
+
+<footer>
+
+    <div class="footer-box">
+        <a class="button button-link footer-item" href="about.html#contact_form">Kontakt</a>
+        <a class="button button-link footer-item" href="legal.html#privacy">Datenschutz</a>
+        <a class="button button-link footer-item" href="legal.html#impressum">Impressum</a>
+    </div>
+    <div>
+        <p>Diese Seite wurde erstellt von<a href="mailto:fza144962@stud.gibb.ch"> Fabian Zaugg</a>, 2024</p>
+    </div>
+</footer>
+<script src="javascript/burger.js"></script>
+
+<script src="javascript/IntersectionObserver.js"></script>
+
+</body>
+
+</html>

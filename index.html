@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Willkommen bei KAU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Condensed:wght@700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<header>
+    <div id="main-navigation">
+        <nav id="topnav" class="topnav">
+            <div ><a href="index.html"><img class="logo" src="pictures/KAU_Logo.jpeg" alt="Logo KAU"> </a></div>
+            <ul>
+                <li class="nav_item l1 active-l"><a class="nav_link" href="index.html">Start</a></li>
+                <li class="nav_item l1 "><a class="nav_link" href="about.html">über uns</a>
+                </li>
+                <li class="nav_item l1"><a class="nav_link" href="membership.html">Mitglied werden</a></li>
+                <li class="nav_item l1"><a class="nav_link" href="legal.html">Rechtliches</a></li>
+                <li class="nav_item l1"><a class="nav_link" href="wissen.html">Wissen</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="toggle_sidebar()"
+                ><i class="fa fa-bars"></i>
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="w3-sidebar w3-bar-block w3-animate-right" id="kau_sidebar">
+        <button class="w3-bar-item w3-circle side-icon" id="sidebar-close"
+                onclick="sidebar_close()"><i class="fa fa-close"></i></button>
+        <a href="index.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-globe fa-2xl"></i></a>
+        <a href="about.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-info-circle"></i></a>
+        <a href="membership.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-user-plus"></i></a>
+        <a href="legal.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-legal"></i></a>
+        <a href="wissen.html" class="w3-bar-item w3-circle side-icon"><i class="fa fa-graduation-cap"></i></a>
+
+    </div>
+</header>
+
+<main>
+    <section id="heroSlider" class ="w3-content w3-display-container slider">
+        <button id="left-button" onclick="plusDivs(-1)" class="w3-button w3-display-left arrow" ><i class="fa fa-caret-left nav-arrow"></i></button>
+        <button id="right-button" onclick="plusDivs(-1)" class="w3-button w3-display-right arrow" ><i class="fa fa-caret-right nav-arrow"></i></button>
+
+        <div class="w3-display-container catSlides slides">
+            <img src="pictures/Cats_Fondue-nightcafe.jpg" alt="Cats eating...Fondue?" >
+            <div class="w3-display-bottommiddle w3-container w3-padding-16 w3-black w3-opacity-min">
+                <h3>Mitgliederversammlung</h3>
+                <p>Die Mitgliederversammlung ist am 13.12.2024</p>
+            </div>
+        </div>
+        <div class="w3-display-container catSlides slides">
+
+            <img src="pictures/black_cats_lake.-nightcafe.jpg" alt="Cats in the Mountain." >
+            <div class="w3-display-bottommiddle w3-container w3-padding-16 w3-black w3-opacity-min">
+                Wir machen regelmässig Wanderungen. Auch ohne Katzen. Bitte keine Hunde mitnehmen, sie könnten die Katzen bei der Jagd stören.
+            </div>
+        </div>
+        <div class="w3-display-container catSlides slides">
+            <img src="pictures/cat_river_city-nightcafe.jpg" alt="Vibrant cat" >
+            <div class="w3-display-bottommiddle w3-container w3-padding-16 w3-black w3-opacity-min">
+                <h3>Interesse an unserer Organisation? </h3>
+                <div></div>
+            </div>
+        </div>
+        <div class="w3-display-container catSlides slides">
+            <img src="pictures/cat_meeting-nightcafe.jpg" alt="Cat explaining growth" >
+            <div class="w3-display-middle w3-container w3-padding-16 w3-black w3-opacity-min">
+                <h3>Die KAU wächst und wächst</h3>
+                <p>Werde auch du Teil unserer Organisation.</p>
+                <div></div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="two-grid-container">
+        <article id="main_about" class="container-in-container bg-light top-margin1 to-be-animated-left">
+            <div>
+                <img class="" src="pictures/cat_river_city-nightcafe.jpg" alt="Cat overseeing rivers">
+            </div>
+            <div class="text-container">
+                <h2>Mehr über KAU</h2>
+                <p>KAU steht für Katzenaufzucht und -unterbringung <br>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, </p>
+
+                <a class= "button" href="about.html">Mehr über uns</a>
+
+
+            </div>
+
+        </article>
+        <article id="main_membership" class="container-in-container bg_even-paler-red top-margin1 to-be-animated-right">
+
+            <div class="text-container">
+                <h2>Portfolio</h2>
+                <p>Natürlich gibt es auch noch das Portfolio der letzten Abgaben</p>
+                <a class= "button" href="wissen.html">Portfolio anschauen</a>
+
+            </div>
+            <div>
+                <img class="" src="pictures/Vibrant-Cat-Nightcafe.jpg" alt="Vibrant Cat">
+            </div>
+        </article>
+    </div>
+</main>
+
+<footer>
+
+    <div class="footer-box">
+        <a class="button button-link footer-item" href="about.html#contact_form">Kontakt</a>
+        <a class="button button-link footer-item" href="legal.html#privacy">Datenschutz</a>
+        <a class="button button-link footer-item" href="legal.html#impressum">Impressum</a>
+    </div>
+    <div>
+        <p>Diese Seite wurde erstellt von<a href="mailto:fza144962@stud.gibb.ch"> Fabian Zaugg</a>, 2024</p>
+    </div>
+</footer>
+<script src="javascript/burger.js"></script>
+
+<script src="javascript/slider.js"></script>
+<script src="javascript/IntersectionObserver.js"></script>
+</body>
+
+</html>

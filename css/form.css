@@ -1,0 +1,49 @@
+/* ###########
+FORMS
+ ############ */
+
+/* haserror */
+form .form-group.hasError input {
+    border-color: #731010 !important;
+    background-color: #731010;
+    color: #f2f2f2;
+}
+
+#membership_form, #contact_form{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.membership-box, .membership, .contact{
+    display: flex;
+    flex-direction: column;
+
+}
+input{
+    background-color: #BCFFCF;
+    height: 3em;
+    width: 100%;
+    margin-top: 1em;
+}
+textarea {
+    background-color: #BCFFCF;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.form-group{
+    padding: 1em;
+    margin: 0 10px;
+}
+.form-group p{
+    font-size: larger;
+}
+.error{
+    color: #9a1818;
+}
+
+.submit-button{
+    max-width:70%;
+    margin: 1em auto;
+
+}

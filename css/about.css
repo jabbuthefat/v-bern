@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+.about_box{
+    padding: 1em;
+
+}
+
+.about_image{
+    /*max-width:100%;*/
+    max-height: 100vh;
+}
+/*.about_div {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    padding: 2em;*/
+/*}*/
+.about_div {
+    display: grid;
+    grid-auto-columns: auto;
+    padding: 2em;
+}
+
+#about_contact{
+    justify-content:center;
+}
+
+@media screen and (max-width: 600px){
+    .flex-container{
+        flex-direction: column;
+    }
+}
+
+.grid-about{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .grid-container, .grid-about{
+    grid-template-columns: 1fr;
+}
+}
+.about-portrait{
+    max-height:100%;
+    max-width:100%
+}

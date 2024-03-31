@@ -1,0 +1,27 @@
+#hoster {
+
+    border-collapse: collapse;
+    width: 100%;
+    padding: 1em;
+}
+
+#hoster td, #hoster th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#hoster tr:nth-child(even){
+    background-color: #8b0a0a;
+    color: white;
+}
+
+#hoster {
+    margin-bottom: 1em;
+    text-align: left;
+    background-color: #163720;
+    color: white;
+}
+
+#wissen article {
+    margin: 1em;
+}
